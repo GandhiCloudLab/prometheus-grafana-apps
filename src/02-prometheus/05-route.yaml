@@ -1,12 +1,12 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: g-monitoring-prometheus-route
-  namespace: g-monitoring-ns
+  name: prometheus-route
+  namespace: g-monitor-ns
   labels:
-    name: g-monitoring-route
-    app: g-monitoring-prometheus-app
-    project: g-monitoring-project
+    name: prometheus-route
+    app: prometheus-app
+    project: g-monitor-project
     operated-prometheus: "true"
 spec:
   path: /

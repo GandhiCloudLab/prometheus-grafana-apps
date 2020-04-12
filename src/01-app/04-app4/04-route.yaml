@@ -1,17 +1,17 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: g-monitoring-app4-route
-  namespace: g-monitoring-app4-ns
+  name: g-monitor-app4-route
+  namespace: g-monitor-app4-ns
   labels:
-    name: g-monitoring-app4-route
-    app: g-monitoring-app4-app
-    project: g-monitoring-project
+    name: g-monitor-app4-route
+    app: g-monitor-app4-app
+    project: g-monitor-project
 spec:
   path: /microprofile-crm
   to:
     kind: Service
-    name: g-monitoring-app4-service
+    name: g-monitor-app4-service
     weight: 100
   port:
     targetPort: my-http-service

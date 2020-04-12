@@ -1,17 +1,17 @@
 apiVersion: monitoring.coreos.com/v1
 kind: Prometheus
 metadata:
-  name: g-monitoring-prometheus
-  namespace: g-monitoring-ns
+  name: prometheus-instance
+  namespace: g-monitor-ns
   labels:
-    name: g-monitoring-prometheus
-    app: g-monitoring-prometheus-app
-    project: g-monitoring-project
+    name: prometheus-instance
+    app: prometheus-app
+    project: g-monitor-project
 spec:
   replicas: 2
-  serviceAccountName: g-monitoring-sa
+  serviceAccountName: prometheus-sa
   securityContext: {}
   serviceMonitorSelector: 
     matchLabels:
-      name: g-monitoring-service-monitor
+      name: prometheus-service-monitor
     ruleSelector: {}

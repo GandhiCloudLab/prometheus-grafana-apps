@@ -1,25 +1,25 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: g-monitoring-app6-deployment
-  namespace: g-monitoring-app6-ns
+  name: g-monitor-app6-deployment
+  namespace: g-monitor-app6-ns
   labels:
-    name: g-monitoring-app6-deployment
-    app: g-monitoring-app6-app
-    project: g-monitoring-project
+    name: g-monitor-app6-deployment
+    app: g-monitor-app6-app
+    project: g-monitor-project
 spec:
   replicas: 2
   selector:
     matchLabels:
-      name: g-monitoring-app6-deployment
-      app: g-monitoring-app6-app
-      project: g-monitoring-project
+      name: g-monitor-app6-deployment
+      app: g-monitor-app6-app
+      project: g-monitor-project
   template:
     metadata:
       labels:
-        name: g-monitoring-app6-deployment
-        app: g-monitoring-app6-app
-        project: g-monitoring-project
+        name: g-monitor-app6-deployment
+        app: g-monitor-app6-app
+        project: g-monitor-project
     spec:
       containers:
         - name: main-container

@@ -1,12 +1,12 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: g-monitoring-grafana-route
-  namespace: g-monitoring-ns
+  name: grafana-route
+  namespace: g-monitor-ns
   labels:
-    name: g-monitoring-grafana-route
-    app: g-monitoring-grafana-app
-    project: g-monitoring-project
+    name: grafana-route
+    app: grafana-app
+    project: g-monitor-project
     operated-prometheus: "true"
 spec:
   path: /

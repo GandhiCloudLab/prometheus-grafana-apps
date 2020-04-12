@@ -2,8 +2,8 @@ apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
   generation: 1
-  name: prometheus
-  namespace: g-monitoring-ns
+  name: prometheus-operator
+  namespace: g-monitor-ns
 spec:
   channel: beta
   installPlanApproval: Automatic

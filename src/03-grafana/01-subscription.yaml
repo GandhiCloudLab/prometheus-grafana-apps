@@ -3,7 +3,7 @@ kind: Subscription
 metadata:
   generation: 1
   name: grafana-operator
-  namespace: g-monitoring-ns
+  namespace: g-monitor-ns
 spec:
   channel: alpha
   installPlanApproval: Automatic

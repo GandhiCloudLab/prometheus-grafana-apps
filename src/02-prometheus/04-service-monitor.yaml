@@ -1,24 +1,24 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: g-monitoring-service-monitor
-  namespace: g-monitoring-ns
+  name: g-monitor-service-monitor
+  namespace: g-monitor-ns
   labels:
-    name: g-monitoring-service-monitor
-    app: g-monitoring-prometheus-app
-    project: g-monitoring-project
+    name: g-monitor-service-monitor
+    app: prometheus-app
+    project: g-monitor-project
 spec:
   namespaceSelector:
     matchNames:
-      - g-monitoring-app1-ns
-      - g-monitoring-app2-ns
-      - g-monitoring-app3-ns
-      - g-monitoring-app4-ns
-      - g-monitoring-app5-ns
-      - g-monitoring-app6-ns
+      - g-monitor-app1-ns
+      - g-monitor-app2-ns
+      - g-monitor-app3-ns
+      - g-monitor-app4-ns
+      - g-monitor-app5-ns
+      - g-monitor-app6-ns
   selector:
     matchLabels:
-      project: g-monitoring-project
+      project: g-monitor-project
   endpoints:
     - port: main-container
       path: /actuator/prometheus

@@ -1,17 +1,17 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: g-monitoring-app2-route
-  namespace: g-monitoring-app2-ns
+  name: g-monitor-app2-route
+  namespace: g-monitor-app2-ns
   labels:
-    name: g-monitoring-app2-route
-    app: g-monitoring-app2-app
-    project: g-monitoring-project
+    name: g-monitor-app2-route
+    app: g-monitor-app2-app
+    project: g-monitor-project
 spec:
   path: /
   to:
     kind: Service
-    name: g-monitoring-app2-service
+    name: g-monitor-app2-service
     weight: 100
   port:
     targetPort: main-container
