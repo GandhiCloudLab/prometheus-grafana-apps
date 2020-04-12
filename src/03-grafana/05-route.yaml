@@ -1,5 +1,5 @@
-kind: Route
 apiVersion: route.openshift.io/v1
+kind: Route
 metadata:
   name: g-monitoring-grafana-route
   namespace: g-monitoring-ns
@@ -15,4 +15,7 @@ spec:
     name: grafana-service
     weight: 100
   port:
-    targetPort: tcp
+    targetPort: grafana
+  tls:
+    termination: edge
+  wildcardPolicy: None

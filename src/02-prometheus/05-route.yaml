@@ -1,7 +1,7 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: g-monitoring-route
+  name: g-monitoring-prometheus-route
   namespace: g-monitoring-ns
   labels:
     name: g-monitoring-route
@@ -16,3 +16,4 @@ spec:
     weight: 100
   port:
     targetPort: web
+  wildcardPolicy: None

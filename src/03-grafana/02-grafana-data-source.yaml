@@ -1,11 +1,11 @@
 apiVersion: integreatly.org/v1alpha1
 kind: GrafanaDataSource
 metadata:
-  name: g-monitoring-grafana-datasource
+  name: grafana-datasource
   namespace: g-monitoring-ns
   labels:
-    name: g-monitoring-grafana-datasource
-    app: g-monitoring-grafana-app
+    name: grafana-datasource
+    app: grafana-app
     project: g-monitoring-project
 spec:
   name: middlewareabc.yaml
