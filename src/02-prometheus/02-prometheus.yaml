@@ -9,7 +9,7 @@ metadata:
     project: g-monitoring-project
 spec:
   replicas: 2
-  serviceAccountName: g-monitoring-service-account
+  serviceAccountName: g-monitoring-sa
   securityContext: {}
   serviceMonitorSelector: 
     matchLabels:

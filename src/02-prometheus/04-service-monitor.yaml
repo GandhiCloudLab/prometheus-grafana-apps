@@ -10,12 +10,12 @@ metadata:
 spec:
   namespaceSelector:
     matchNames:
-      - g-monitoring-prometheus-app1-ns
-      - g-monitoring-prometheus-app2-ns
-      - g-monitoring-prometheus-app3-ns
-      - g-monitoring-prometheus-app4-ns
-      - g-monitoring-prometheus-app5-ns
-      - g-monitoring-prometheus-app6-ns
+      - g-monitoring-app1-ns
+      - g-monitoring-app2-ns
+      - g-monitoring-app3-ns
+      - g-monitoring-app4-ns
+      - g-monitoring-app5-ns
+      - g-monitoring-app6-ns
   selector:
     matchLabels:
       project: g-monitoring-project
