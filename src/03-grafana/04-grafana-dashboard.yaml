@@ -2,6 +2,7 @@ apiVersion: integreatly.org/v1alpha1
 kind: GrafanaDashboard
 metadata:
   name: sample-grafana-dashboard
+  namespace: g-monitor-ns
   labels:
     name: sample-grafana-dashboard
     app: grafana-app

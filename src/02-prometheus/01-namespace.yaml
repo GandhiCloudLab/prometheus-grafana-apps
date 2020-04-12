@@ -1,8 +1,8 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: g-monitor-ns
-  labels:
-    name: g-monitor-ns
-    app: g-monitor-prometheus-app
-    project: g-monitor-project
+# apiVersion: v1
+# kind: Namespace
+# metadata:
+#   name: g-monitor-ns
+#   labels:
+#     name: g-monitor-ns
+#     app: g-monitor-prometheus-app
+#     project: g-monitor-project
